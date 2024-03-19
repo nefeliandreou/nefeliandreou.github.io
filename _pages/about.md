@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Computer Vision / Generative AI / Animation
+subtitle: Computer Vision / Generative AI / Animation
 
 profile:
   align: right
