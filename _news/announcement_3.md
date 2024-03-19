@@ -1,8 +1,7 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2022-09-19 15:59:00-0400
 inline: true
-related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+I will be joining the [VISTA](https://www.lix.polytechnique.fr/vista/) team in the [Computer Science Laboratory](https://www.lix.polytechnique.fr) at [École Polytechnique](https://www.polytechnique.edu/en) under the supervision of [Vicky Kalogeiton](https://vicky.kalogeiton.info) and [Marie-Paule Cani](https://www.lix.polytechnique.fr/geovic/members/marie-paule_cani/)!
