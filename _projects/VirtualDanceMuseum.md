@@ -5,12 +5,9 @@ description: Digital Repository for 3D motion capture of folk dance creations.
 img: assets/img/2_project.jpg
 importance: 1
 category: work
-target: https://dancemuseum.cs.ucy.ac.cy
+target: 
 ---
 
-Virtual Dance Museum is the first digital repository that stores high quality 3D motion capture animations of folk dance creations, offering the opportunity to scholars and dance experts to study and analyze the world of our dance heritage.
-
-[Access the museum](https://dancemuseum.cs.ucy.ac.cy){: .btn .btn-info }
 
 
 <!-- 
