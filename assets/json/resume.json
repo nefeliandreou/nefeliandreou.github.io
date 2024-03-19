@@ -66,7 +66,7 @@
     {
       "institution": "University of Bath, UK",
       "url": "https://www.bath.ac.uk/",
-      "location": "Bath, United Kingdom",
+      "location": "Bath, England",
       "area": "Data Science",
       "studyType": "MSc",
       "startDate": "2019",
@@ -81,7 +81,7 @@
     },
     {
       "institution": "University of Bath, UK",
-      "location": "Bath, United Kingdom",
+      "location": "Bath, England",
       "url": "https://www.bath.ac.uk/",
       "area": "Mathematics",
       "studyType": "BSc",
@@ -107,7 +107,7 @@
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
+      "name": "",
       "publisher": "Annalen der Physik",
       "releaseDate": "1905-06-30",
       "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
@@ -128,19 +128,18 @@
       "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
     }
   ],
-  "skills": [
+  "Programming Languages": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "name": "Python",
+      "level": "Master"
+    },
+    {
+      "name": "Java",
+      "level": "Very Good"
+    },
+    {
+      "name": "MatLab, R, C++, JavaScript",
+      "level": "Good"
     }
   ],
   "languages": [
