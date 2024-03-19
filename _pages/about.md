@@ -2,24 +2,34 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+description: Computer Vision / Generative AI / Animation
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
-news: true # includes a list of news items
+news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+awards: true
+service: true
+social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm an Applied Scientist specializing in Generative AI, Multimodal Learning, and techniques 
+for bridging the gap between 2D and 3D to advance the development of Virtual Humans. 
+I am a Marie Skłodowska-Curie Early Stage Researcher as part of the 
+[ITN-CLIPE](https://www.clipe-itn.eu/) project, and a PhD candidate at the
+ [University of Cyprus](http://www.cs.ucy.ac.cy/), under the supervision of
+  Professor [Yiorgos Chrysanthou](https://www.cs.ucy.ac.cy/~yiorgos/). 
+I've had the opportunity to collaborate with leading institutions such as Amazon, 
+École Polytechnique, and the Max-Planck Institute for Intelligent Systems.
+My background includes an MSc in Data Science and BSc in Mathematics from the
+ [University of Bath](https://www.bath.ac.uk/). 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+<a href="https://www.canva.com/design/DAFzNxz6h3g/D9Q2QTn1DKaMUcFf3zzoyg/view?utm_content=DAFzNxz6h3g&utm_campaign=designshare&utm_medium=link&utm_source=editor" class="btn shadow-none" style="border: 2px solid black;margin: 0px 200px 10px 200px;border-color: #6cb7d6;color:#6cb7d6;">View CV</a>
+
+<!-- <a href="https://docs.google.com/document/d/16LHCNREpjp8E_Ul3Xsi-H2HRaxeDzrMWFj6jidNjXTc/edit#heading=h.5rf9wr4r3no2" class="btn shadow-none" style="border: 2px solid black;margin: 0px 200px 10px 200px;border-color: #6cb7d6;color:#6cb7d6;">View CV</a> -->
+
+
+				
