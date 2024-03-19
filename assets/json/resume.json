@@ -11,7 +11,6 @@
   "work": [
     {
       "name": "Amazon, DE",
-      "location": "Tübingen, Germany",
       "position": "Applied Scientist Intern",
       "url": "https://amazon.com",
       "startDate": "2023-10",
@@ -19,7 +18,6 @@
     },
     {
       "name": "University of Cyprus, CY",
-      "location": "Nicosia, Cyprus",
       "position": "Research Associate",
       "url": "https://graphics.cs.ucy.ac.cy/",
       "startDate": "2020-09",
@@ -28,7 +26,6 @@
     },
     {
       "name": "École Polytechnique, FR",
-      "location": "Paris, France",
       "position": "Visiting Researcher",
       "url": "https://www.lix.polytechnique.fr/vista/",
       "startDate": "2022-09",
@@ -37,7 +34,6 @@
     },
     {
       "name": "Max Planck Institute, DE",
-      "location": "Tübingen, Germany",
       "position": "Visiting Researcher",
       "url": "https://ps.is.mpg.de/",
       "startDate": "2021-09",
@@ -46,7 +42,6 @@
     },
     {
       "name": "University of Bath, UK",
-      "location": "Bath, United Kingdom",
       "position": "Casual Teaching Assistant ",
       "url": "https://www.bath.ac.uk/",
       "startDate": "2018-10",
