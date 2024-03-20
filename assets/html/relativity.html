@@ -90,49 +90,51 @@ A dual quaternion ( \mathbf{\overline {q}} )  can be represented as an ensemble 
 <br />
 We establish the following notation: <br />
 <div style="padding-left: 30px;">
+\begin{align}
 ( \mathbf{q} ) quaternion <br />
 ( \mathbf{\overline{q}} ) dual quaternion    <br />
 ( \mathbf{\hat q} ) unit quaternion <br />
 ( \mathbf{\overline{\hat q}} ) unit dual quaternion <br />
 ( \mathbf{q^<em>})  quaternion conjugate <br />
 ( \mathbf{\overline{q}^</em>} ) dual quaternion conjugate  <br />
+\end{align}
 </div>
 <br />
 Dual quaternions allow for convenient mappings from and to other representations which are currently used in the literature (quaternions, rotation matrices, <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhou_On_the_Continuity_of_Rotation_Representations_in_Neural_Networks_CVPR_2019_paper.pdf">ortho6D [Zhou et al., 2018]</a>), allowing for effortless integration into current architectures. They also have well established mathematical properties such as addition and multiplication. 
 <br />
 <br />
 Due to the mathematical properties of dual quaternions we can extract the rotational and positional components. We adopt a current coordinate system, so that the extracted positions correspond to the joint positions with respect to the root joint. We model the root displacement as a separate component. We can express the current transformation of the <em>root</em> joint using <em>local homogeneous</em> coordinates of the form:
-[ \begin{equation}M<em>{curr,root} = 
+[ \begin{align}M<em>{curr,root} = 
 \begin{bmatrix}
 r</em>{11} &amp;r<em>{12}&amp;r</em>{13}&amp;0\
 r<em>{21} &amp;r</em>{22}&amp;r<em>{23}&amp;0\
 r</em>{31} &amp;r<em>{32}&amp;r</em>{33}&amp;0\
 0&amp;0&amp;0&amp;1
 \end{bmatrix} 
-\end{equation} ].
+\end{align} ].
 <br />
 Then following the tree hierarchy and using the <em>local homogeneous</em> coordinates of each joint ( j ), 
 
-[ \begin{equation}M<em>{loc,j} = 
+[ \begin{align}M<em>{loc,j} = 
   \begin{bmatrix}
 r</em>{11}  &amp; r<em>{12} &amp; r</em>{13} &amp; \text{offset}<em>x\
 r</em>{21}  &amp; r<em>{22} &amp; r</em>{23} &amp; \text{offset}<em>y \
 r</em>{31}  &amp; r<em>{32} &amp; r</em>{33} &amp; \text{offset}<em>z\
 0       &amp; 0      &amp; 0      &amp; 1
 \end{bmatrix} ,
-\end{equation}  ] 
+\end{align}  ] 
 
 where the ( \text{offset} ) is taken from the hierarchy of the bvh file,  we can compute the <em>current homogeneous</em> representation for each joint using
 
-[ \begin{equation}
+[ \begin{align}
 M</em>{curr,j} = M<em>{curr,(j-1)} \times M</em>{loc,j}
-\end{equation} ]
+\end{align} ]
 
 Obtaining the local rotations w.r.t. each joint&#39;s parent in the tree architecture, as well as the offsets is straightforward when animation files are used. Intuitively, we can recover the <em>local transformation</em> of joint ( j ) using the inverse procedure:
-[ \begin{equation}
+[ \begin{align}
 M<em>{loc,j} = M^{-1}</em>{curr,(j-1)}M_{curr,j}
 \label{eq: curr2loc}
-\end{equation} ]
+\end{align} ]
 
 With our formulation we take into consideration the hierarchical rig, and overcome problems such as the error accumulation (see Figure below).
 <center>
