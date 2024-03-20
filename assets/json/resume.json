@@ -107,25 +107,18 @@
   ],
   "publications": [
     {
-      "name": "",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Pose Representations for Deep Skeletal Animation.",
+      "publisher": "Computer Graphics Forum",
+      "releaseDate": "2022",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14632",
+      "summary": "In this work, we address the fundamental problem of finding a robust pose representation for motion, suitable for deep skeletal animation, one that can better constrain poses and faithfully capture nuances correlated with skeletal characteristics. We propose a novel representation based on dual quaternions and show experimentally superior results in terms of training convergence and perceived realism of generated motions." 
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Virtual Dance Museum: the Case of Greek/Cypriot Folk Dancing.",
+      "publisher": "Eurographics Association",
+      "releaseDate": "2021",
+      "url": "https://diglib.eg.org/handle/10.2312/gch20211405",
+      "summary": "In this paper, we have designed and developed a virtual dance museum. The users can view and interact with the archived data using advanced 3D character visualization in three ways: via an online 3D virtual environment; in virtual reality using headset; and in augmented reality, where the 3D characters can co-inhabit the real world."
     }
   ],
   "programming": [
