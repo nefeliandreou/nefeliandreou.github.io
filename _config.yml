@@ -19,7 +19,7 @@ icon: 👩‍💻 # the emoji used as the favicon (alternatively, provide image 
 
 url: https://nefeliandreou.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
@@ -73,15 +73,16 @@ twitter_username: nefeliandreou # your Twitter handle
 linkedin_username: nefeliandreou # your LinkedIn user name
 scholar_userid: https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F6m3SwEVoMALIyaXlzzE7O80jBiGnV1nUJ3fxx-_MTLrEpqxnE_y1prXJypg_mH_UYuJYrNl6h0p3LeODURnwnJ2hgMEA&user=ezbt4qQAAAAJ # your Google Scholar ID
 orcid_id: 0000-0003-0341-6469 # your ORCID ID
+semanticscholar_id: https://www.semanticscholar.org/author/Nefeli-Andreou/2142463387 # your Semantic Scholar ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
-research_gate_profile: https://www.researchgate.net/profile/Nefeli-Andreou-2 # your profile on ResearchGate
+research_gate_profile: # your profile on ResearchGate
 blogger_url: # your blogger URL
 work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
-dblp_url: # your DBLP profile url
+dblp_url: https://dblp.org/pid/307/5201.html # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 
 # -----------------------------------------------------------------------------
