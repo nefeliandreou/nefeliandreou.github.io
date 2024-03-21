@@ -97,8 +97,7 @@ A dual quaternion ( \mathbf{\overline {q}} )  can be represented as an ensemble 
 <br />
 We establish the following notation: <br />
 <div style="padding-left: 30px;">
-[ \begin{align}
-( \mathbf{q} ) quaternion 
+( $\mathbf{q}$ ) quaternion 
 ( \mathbf{\overline{q}} ) dual quaternion    
 ( \mathbf{\hat q} ) unit quaternion
 ( \mathbf{\overline{\hat q}} ) unit dual quaternion
@@ -158,10 +157,10 @@ We extract the translation component using
 where ( \mathbf{\hat{q}}_r^</em> ) denotes the conjugate quaternion. 
 
 We also make sure to normalize the predicted dual quaternions, as only unit dual quaternions represent valid rotations. We do so using
-[ \begin{align}
+ \begin{align}
    \hat{\mathbf{\overline{q}}} &amp;= \frac{\overline{\mathbf{q}}}{||\overline{\mathbf{q}}||} =   \frac{\mathbf{q}_r}{||\mathbf{q}_r||} + \varepsilon \bigg[ \frac{\mathbf{q}_d}{||\mathbf{q}_r||} -  \frac{\mathbf{q}_r}{||\mathbf{q}_r||}  \frac{&lt;\mathbf{q}_r , \mathbf{q}_d&gt;}{||\mathbf{q}_r||^2} \bigg] \nonumber \
    &amp;= \mathbf{\hat{q}}_r +  \varepsilon \bigg[ \frac{\mathbf{q}_d}{||\mathbf{q}_r||} - \mathbf{\hat{q}}_r  \frac{&lt;\mathbf{q}_r , \mathbf{q}_d&gt;}{||\mathbf{q}_r||^2} \bigg]
-\end{align} ]
+\end{align} 
 
 
 We experiment with two recurrent neural networks, the <a href="https://github.com/papagina/Auto_Conditioned_RNN_motion">acRNN</a> and <a href="https://github.com/facebookresearch/QuaterNet" >QuaterNet</a> and compare with the following representations: quaternions, quaternions with joint positions, quaternions with forward kinematic (FK) loss, ortho6D and ortho6D with positions.
