@@ -92,22 +92,20 @@ elements to be missed. Qualitative results demonstrate the usefulness of the par
  </p>
 
 <h2 id="overview">Method</h2>
-A dual quaternion ( \mathbf{\overline {q}} )  can be represented as an ensemble of ordinary quaternions ( \mathbf{q}_r )  and ( \mathbf{q}_d ) , in the form ( \mathbf{q}_r +  \mathbf{q}_d\varepsilon ) , where  ( \varepsilon )  is the dual unit, satisfying the relation ( \varepsilon^2= 0 ) . The first quaternion describes the rotation. The second quaternion, ( \mathbf{q}_d )  encodes translational information.
+A dual quaternion $ ( \mathbf{\overline {q}} ) $  can be represented as an ensemble of ordinary quaternions $ ( \mathbf{q}_r )$  and $( \mathbf{q}_d)$, in the form ( \mathbf{q}_r +  \mathbf{q}_d\varepsilon ) , where  ( \varepsilon )  is the dual unit, satisfying the relation ( \varepsilon^2= 0 ) . The first quaternion describes the rotation. The second quaternion, ( \mathbf{q}_d )  encodes translational information.
 <br />
 <br />
 We establish the following notation: <br />
 <div style="padding-left: 30px;">
 \begin{align}
-  \mathbf{q} & quaternion 
+  \mathbf{q} :& quaternion \\
+  \mathbf{\overline{q}} :& dual quaternion \\
+  \mathbf{\hat q} :&  unit quaternion \\
+  \mathbf{\overline{\hat q}} :& unit dual quaternion \\
+   \mathbf{q^<em>} :& quaternion conjugate \\
+     \mathbf{\overline{q}^</em>} :& dual quaternion conjugate 
 \end{align} 
   
-\mathbf{q} & quaternion 
-( \mathbf{\overline{q}} ) dual quaternion    
-( \mathbf{\hat q} ) unit quaternion
-( \mathbf{\overline{\hat q}} ) unit dual quaternion
-( \mathbf{q^<em>})  quaternion conjugate
-( \mathbf{\overline{q}^</em>} ) dual quaternion conjugate 
-\end{align} ]
 </div>
 <br />
 Dual quaternions allow for convenient mappings from and to other representations which are currently used in the literature (quaternions, rotation matrices, <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhou_On_the_Continuity_of_Rotation_Representations_in_Neural_Networks_CVPR_2019_paper.pdf">ortho6D [Zhou et al., 2018]</a>), allowing for effortless integration into current architectures. They also have well established mathematical properties such as addition and multiplication. 
