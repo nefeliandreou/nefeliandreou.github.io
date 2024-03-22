@@ -94,12 +94,18 @@ A dual quaternion \( \mathbf{\overline {q}} \)  can be represented as an ensembl
 <br />
 We establish the following notation: <br />
 <div style="padding-left: 30px;">
-\( \mathbf{q} \) quaternion <br />
+
+\[ \begin{align}
+\( \mathbf{q} \) & quaternion 
+\( \mathbf{\overline{q}} \) & dual quaternion
+\end{align} \]
+
+<!-- \( \mathbf{q} \) quaternion <br />
 \( \mathbf{\overline{q}} \) dual quaternion    <br />
 \( \mathbf{\hat q} \) unit quaternion <br />
 \( \mathbf{\overline{\hat q}} \) unit dual quaternion <br />
 \( \mathbf{q^*}\)  quaternion conjugate <br />
-\( \mathbf{\overline{q}^*} \) dual quaternion conjugate  <br />
+\( \mathbf{\overline{q}^*} \) dual quaternion conjugate  <br /> -->
 </div>
 <br />
 Dual quaternions allow for convenient mappings from and to other representations which are currently used in the literature (quaternions, rotation matrices, <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhou_On_the_Continuity_of_Rotation_Representations_in_Neural_Networks_CVPR_2019_paper.pdf">ortho6D [Zhou et al., 2018]</a>), allowing for effortless integration into current architectures. They also have well established mathematical properties such as addition and multiplication. 
