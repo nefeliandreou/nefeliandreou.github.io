@@ -176,10 +176,10 @@ With our formulation we take into consideration the hierarchical rig, and overco
 We design dedicated losses that leverage the representation, such as the positional loss and offset loss. We assess the contribution of each loss through an ablation study. 
 For the positional information, we extract the translation from the current dual quaternions, while for the offset loss we extract the translation from the local dual quaternions.
 We extract the translation component using
-[\begin{aligned}
+\begin{align}
 2 \mathbf{q}_d \mathbf{\hat{q}}_r^<em>
-\end{aligned}]
-where ( \mathbf{\hat{q}}_r^</em> ) denotes the conjugate quaternion. 
+\end{align}
+where \( \mathbf{\hat{q}}_r^</em> \) denotes the conjugate quaternion. 
 
 We also make sure to normalize the predicted dual quaternions, as only unit dual quaternions represent valid rotations. We do so using
  \begin{align}
