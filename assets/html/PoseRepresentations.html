@@ -91,19 +91,43 @@ elements to be missed. Qualitative results demonstrate the usefulness of the par
  </p>
 
 <h2 id="overview">Method</h2>
-A dual quaternion \( \mathbf{\overline{q}} \) can be represented as an ensemble of ordinary quaternions $ ( \mathbf{q}_r )$  and $( \mathbf{q}_d)$, in the form ( \mathbf{q}_r +  \mathbf{q}_d\varepsilon ) , where  ( \varepsilon )  is the dual unit, satisfying the relation ( \varepsilon^2= 0 ) . The first quaternion describes the rotation. The second quaternion, ( \mathbf{q}_d )  encodes translational information.
+A dual quaternion \( \mathbf{\overline{q}} \) can be represented as an ensemble of ordinary quaternions  \( \mathbf{q}_r \) and \( \mathbf{q}_d \), in the form \( \mathbf{q}_r +  \mathbf{q}_d\varepsilon \), where  \( \varepsilon \)  is the dual unit, satisfying the relation \( \varepsilon^2= 0 \). The first quaternion describes the rotation. The second quaternion, \( \mathbf{q}_d \)  encodes translational information.
 <br />
 <br />
 We establish the following notation: <br />
 <div style="padding-left: 30px;">
-\begin{align}
-  \mathbf{q} :& quaternion \
-  \mathbf{\overline{q}} :& dual quaternion \
-  \mathbf{\hat q} :&  unit quaternion \
-  \mathbf{\overline{\hat q}} :& unit dual quaternion \
-   \mathbf{q^<em>} :& quaternion conjugate \
-     \mathbf{\overline{q}^</em>} :& dual quaternion conjugate 
-\end{align} 
+  <table>
+    <tr>
+      <th>Symbol</th>
+      <th>Meaning</th>
+    </tr>
+    <tr>
+      <td> \( \mathbf{q} \) </td>
+      <td>quaternion</td>
+    </tr>
+    <tr>
+      <td> \(  \mathbf{\overline{q}} \) </td>
+      <td>dual quaternion</td>
+    </tr>
+    <tr>
+      <td> \(    \mathbf{\hat q} \) </td>
+      <td>unit quaternion</td>
+    </tr>
+    <tr>
+      <td> \( \overline{\hat q}} \) </td>
+      <td>unit dual quaternion</td>
+    </tr>
+     <tr>
+      <td> \( \mathbf{q^<em>} \) </td>
+      <td> quaternion conjugate</td>
+    </tr>
+     <tr>
+      <td> \(  \mathbf{\overline{q}^</em>} \) </td>
+      <td> dual quaternion conjugate</td>
+    </tr>
+  </table>
+
+
   
 </div>
 <br />
@@ -111,31 +135,31 @@ Dual quaternions allow for convenient mappings from and to other representations
 <br />
 <br />
 Due to the mathematical properties of dual quaternions we can extract the rotational and positional components. We adopt a current coordinate system, so that the extracted positions correspond to the joint positions with respect to the root joint. We model the root displacement as a separate component. We can express the current transformation of the <em>root</em> joint using <em>local homogeneous</em> coordinates of the form:
-[ \begin{align}M<em>{curr,root} = 
+\[ M<em>{curr,root} = 
 \begin{bmatrix}
 r</em>{11} &amp;r<em>{12}&amp;r</em>{13}&amp;0\
 r<em>{21} &amp;r</em>{22}&amp;r<em>{23}&amp;0\
 r</em>{31} &amp;r<em>{32}&amp;r</em>{33}&amp;0\
 0&amp;0&amp;0&amp;1
 \end{bmatrix} 
-\end{align} ].
+\]
 <br />
 Then following the tree hierarchy and using the <em>local homogeneous</em> coordinates of each joint ( j ), 
 
-[ \begin{align}M<em>{loc,j} = 
+\[ M<em>{loc,j} = 
   \begin{bmatrix}
 r</em>{11}  &amp; r<em>{12} &amp; r</em>{13} &amp; \text{offset}<em>x\
 r</em>{21}  &amp; r<em>{22} &amp; r</em>{23} &amp; \text{offset}<em>y \
 r</em>{31}  &amp; r<em>{32} &amp; r</em>{33} &amp; \text{offset}<em>z\
 0       &amp; 0      &amp; 0      &amp; 1
 \end{bmatrix} ,
-\end{align}  ] 
+  \] 
 
 where the ( \text{offset} ) is taken from the hierarchy of the bvh file,  we can compute the <em>current homogeneous</em> representation for each joint using
 
-[ \begin{align}
+ \begin{align}
 M</em>{curr,j} = M<em>{curr,(j-1)} \times M</em>{loc,j}
-\end{align} ]
+\end{align} 
 
 Obtaining the local rotations w.r.t. each joint&#39;s parent in the tree architecture, as well as the offsets is straightforward when animation files are used. Intuitively, we can recover the <em>local transformation</em> of joint ( j ) using the inverse procedure:
 [ \begin{align}
