@@ -114,7 +114,7 @@ We establish the following notation: <br />
       <td>unit quaternion</td>
     </tr>
     <tr>
-      <td> \( \overline{\hat q} \) </td>
+      <td> \( \mathbf{\overline{\hat q}} \) </td>
       <td>unit dual quaternion</td>
     </tr>
      <tr>
@@ -135,7 +135,7 @@ Dual quaternions allow for convenient mappings from and to other representations
 <br />
 <br />
 Due to the mathematical properties of dual quaternions we can extract the rotational and positional components. We adopt a current coordinate system, so that the extracted positions correspond to the joint positions with respect to the root joint. We model the root displacement as a separate component. We can express the current transformation of the <em>root</em> joint using <em>local homogeneous</em> coordinates of the form:
-\[ M<em>{curr,root} = 
+\[ M{curr,root} = 
 \begin{bmatrix}
 r</em>{11} &amp;r<em>{12}&amp;r</em>{13}&amp;0\
 r<em>{21} &amp;r</em>{22}&amp;r<em>{23}&amp;0\
@@ -148,24 +148,23 @@ Then following the tree hierarchy and using the <em>local homogeneous</em> coord
 
 \[ M<em>{loc,j} = 
   \begin{bmatrix}
-r</em>{11}  &amp; r<em>{12} &amp; r</em>{13} &amp; \text{offset}<em>x\
+r{11}  &amp; r{12} &amp; r13} &amp; \text{offset}x\
 r</em>{21}  &amp; r<em>{22} &amp; r</em>{23} &amp; \text{offset}<em>y \
 r</em>{31}  &amp; r<em>{32} &amp; r</em>{33} &amp; \text{offset}<em>z\
 0       &amp; 0      &amp; 0      &amp; 1
 \end{bmatrix} ,
   \] 
 
-where the ( \text{offset} ) is taken from the hierarchy of the bvh file,  we can compute the <em>current homogeneous</em> representation for each joint using
+where the \( \text{offset} \) is taken from the hierarchy of the bvh file,  we can compute the <em>current homogeneous</em> representation for each joint using
 
- \begin{align}
-M</em>{curr,j} = M<em>{curr,(j-1)} \times M</em>{loc,j}
-\end{align} 
+\[
+M_{curr,j} = M_{curr,(j-1)} \times M_{loc,j}
+\]
 
-Obtaining the local rotations w.r.t. each joint&#39;s parent in the tree architecture, as well as the offsets is straightforward when animation files are used. Intuitively, we can recover the <em>local transformation</em> of joint ( j ) using the inverse procedure:
-[ \begin{align}
-M<em>{loc,j} = M^{-1}</em>{curr,(j-1)}M_{curr,j}
-\label{eq: curr2loc}
-\end{align} ]
+Obtaining the local rotations w.r.t. each joint&#39;s parent in the tree architecture, as well as the offsets is straightforward when animation files are used. Intuitively, we can recover the <em>local transformation</em> of joint \( j \) using the inverse procedure:
+\[ 
+M_{loc,j} = M^{-1}_{curr,(j-1)}M_{curr,j}
+\]
 
 With our formulation we take into consideration the hierarchical rig, and overcome problems such as the error accumulation (see Figure below).
 <center>
@@ -176,10 +175,11 @@ With our formulation we take into consideration the hierarchical rig, and overco
 We design dedicated losses that leverage the representation, such as the positional loss and offset loss. We assess the contribution of each loss through an ablation study. 
 For the positional information, we extract the translation from the current dual quaternions, while for the offset loss we extract the translation from the local dual quaternions.
 We extract the translation component using
-\begin{align}
-2 \mathbf{q}_d \mathbf{\hat{q}}_r^<em>
-\end{align}
-where \( \mathbf{\hat{q}}_r^</em> \) denotes the conjugate quaternion. 
+\[
+2 \mathbf{q}_d \mathbf{\hat{q}}_r^*
+\]
+
+where \( \mathbf{\hat{q}}_r^* \) denotes the conjugate quaternion. 
 
 We also make sure to normalize the predicted dual quaternions, as only unit dual quaternions represent valid rotations. We do so using
  \begin{align}
