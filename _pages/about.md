@@ -21,7 +21,7 @@ for bridging the gap between 2D and 3D to advance the development of Virtual Hum
 I am a Marie Skłodowska-Curie Early Stage Researcher as part of the 
 [ITN-CLIPE](https://www.clipe-itn.eu/) project, and a PhD candidate at the
 [University of Cyprus](http://www.cs.ucy.ac.cy/), under the supervision of
-Professor [Yiorgos Chrysanthou](https://www.cs.ucy.ac.cy/~yiorgos/). 
+Professor [Yiorgos Chrysanthou](https://www.cyens.org.cy/en-gb/about/people/management/yiorgos-chrystanthou/). 
   
 I've had the opportunity to collaborate with leading institutions such as Amazon, 
 École Polytechnique, and the Max-Planck Institute for Intelligent Systems.
