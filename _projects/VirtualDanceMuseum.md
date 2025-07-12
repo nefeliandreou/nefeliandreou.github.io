@@ -2,7 +2,7 @@
 layout: page
 title: Virtual Dance Museum 
 description: Digital Repository for 3D motion capture of folk dance creations.
-img: assets/img/2_project.jpg
+img: assets/img/publication_preview/VDM_21.gif
 importance: 1
 category: work
 target: 
