@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: 
+permalink:
 title: teaching
 description: Materials for courses you taught. Replace this text with your description.
 nav: false

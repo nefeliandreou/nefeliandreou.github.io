@@ -1,8 +1,8 @@
 ---
 layout: page
 title: projects
-permalink: 
-description: 
+permalink:
+description:
 nav: false
 nav_order: 3
 display_categories: [work, fun]
