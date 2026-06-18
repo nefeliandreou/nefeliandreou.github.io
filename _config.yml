@@ -229,7 +229,7 @@ sass:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ["robots.txt"]
+  exclude: ["robots.txt", "sitemap.xml"]
   uglifier_args:
     harmony: true
 
