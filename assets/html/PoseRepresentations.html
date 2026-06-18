@@ -135,22 +135,22 @@ Dual quaternions allow for convenient mappings from and to other representations
 <br />
 <br />
 Due to the mathematical properties of dual quaternions we can extract the rotational and positional components. We adopt a current coordinate system, so that the extracted positions correspond to the joint positions with respect to the root joint. We model the root displacement as a separate component. We can express the current transformation of the <em>root</em> joint using <em>local homogeneous</em> coordinates of the form:
-\[ M{curr,root} = 
+\[ M_{curr,root} = 
 \begin{bmatrix}
-r</em>{11} &amp;r<em>{12}&amp;r</em>{13}&amp;0\
-r<em>{21} &amp;r</em>{22}&amp;r<em>{23}&amp;0\
-r</em>{31} &amp;r<em>{32}&amp;r</em>{33}&amp;0\
-0&amp;0&amp;0&amp;1
+r_{11} &amp; r_{12} &amp; r_{13} &amp; 0\\
+r_{21} &amp; r_{22} &amp; r_{23} &amp; 0\\
+r_{31} &amp; r_{32} &amp; r_{33} &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1
 \end{bmatrix} 
 \]
 <br />
 Then following the tree hierarchy and using the <em>local homogeneous</em> coordinates of each joint ( j ), 
 
-\[ M<em>{loc,j} = 
+\[ M_{loc,j} = 
   \begin{bmatrix}
-r{11}  &amp; r{12} &amp; r13} &amp; \text{offset}x\
-r</em>{21}  &amp; r<em>{22} &amp; r</em>{23} &amp; \text{offset}<em>y \
-r</em>{31}  &amp; r<em>{32} &amp; r</em>{33} &amp; \text{offset}<em>z\
+r_{11}  &amp; r_{12} &amp; r_{13} &amp; \text{offset}_x\\
+r_{21}  &amp; r_{22} &amp; r_{23} &amp; \text{offset}_y \\
+r_{31}  &amp; r_{32} &amp; r_{33} &amp; \text{offset}_z\\
 0       &amp; 0      &amp; 0      &amp; 1
 \end{bmatrix} ,
   \] 
