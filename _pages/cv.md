@@ -7,5 +7,5 @@ nav_order: 5
 description: "Redirecting..."
 ---
 
-<meta http-equiv="refresh" content="0; url=https://www.canva.com/design/DAFzNxz6h3g/D9Q2QTn1DKaMUcFf3zzoyg/view?utm_content=DAFzNxz6h3g&utm_campaign=designshare&utm_medium=link&utm_source=editor" />
-<p>If you are not redirected, <a href="https://www.canva.com/design/DAFzNxz6h3g/D9Q2QTn1DKaMUcFf3zzoyg/view?utm_content=DAFzNxz6h3g&utm_campaign=designshare&utm_medium=link&utm_source=editor">click here to view my CV</a>.</p>
+<meta http-equiv="refresh" content="0; url=https://drive.google.com/file/d/1XK7mpUIv3OeY1pZ1R8KysHeKQ2AYBHxq/view?usp=sharing" />
+<p>If you are not redirected, <a href="https://drive.google.com/file/d/1XK7mpUIv3OeY1pZ1R8KysHeKQ2AYBHxq/view?usp=sharing">click here to view my CV</a>.</p>
